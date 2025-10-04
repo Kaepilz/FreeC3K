@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 // ensure motion isn't flagged as unused by eslint when used as JSX namespace
 void motion;
+import { safeGetArray } from '../lib/safeLocal';
 
 /**
  * Simple spin wheel demo. No images required.
@@ -39,7 +40,7 @@ export default function SpinWheel() {
       setResult(pick);
       setSpinning(false);
       // save analytics to localStorage for demo
-      const wins = JSON.parse(localStorage.getItem('wins') || '[]');
+      const wins = safeGetArray('wins');
       wins.unshift({ ...pick, when: new Date().toISOString() });
       localStorage.setItem('wins', JSON.stringify(wins.slice(0, 50)));
     }, 1600);
@@ -76,10 +77,10 @@ export default function SpinWheel() {
         <div className="mt-4">
           <div className="text-xs text-neutral-400">Recent wins</div>
           <ul className="mt-2 space-y-2">
-            {JSON.parse(localStorage.getItem('wins') || '[]').slice(0,5).map((w, i) => (
+            {safeGetArray('wins').slice(0,5).map((w, i) => (
               <li key={i} className="text-sm text-neutral-200">{w.label} • <span className="text-neutral-400">{new Date(w.when).toLocaleString()}</span></li>
             ))}
-            {(!JSON.parse(localStorage.getItem('wins') || '[]').length) && <li className="text-neutral-500">No winners yet — be first!</li>}
+            {(!safeGetArray('wins').length) && <li className="text-neutral-500">No winners yet — be first!</li>}
           </ul>
         </div>
 

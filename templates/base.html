@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Freelancing Site{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <a href="/">Home</a> |
+        <a href="/users/login/">Login</a> |
+        <a href="/users/signup/">Signup</a>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>© Freelancing Site 2025</p>
+    </footer>
+</body>
+</html>

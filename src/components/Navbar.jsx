@@ -24,12 +24,13 @@ export default function Navbar() {
   };
 
   return (
-    <header className="glass border-b border-neutral-800 py-3">
+    <header className="glass border-b border-neutral-100 py-3">
       <div className="container mx-auto px-4 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-black font-extrabold">
-            FH
+         
           </div>
+          
           <div className="hidden md:block">
             <div className="text-xl font-bold">Freelance<span className="text-accent">Hub</span></div>
             <div className="text-xs text-neutral-400">Nepal-first • Made with ❤️</div>
@@ -44,11 +45,12 @@ export default function Navbar() {
             <>
               <button className="px-3 py-1 text-sm rounded bg-primary/20 text-primary" onClick={() => navigate(user.role === 'client' ? '/client' : '/freelancer')}>Dashboard</button>
               <button onClick={logout} className="px-3 py-1 rounded border border-neutral-700 text-sm">Logout</button>
+              
             </>
           ) : (
             <>
               <Link to="/login" className="text-sm text-neutral-300 hover:text-white">Login</Link>
-              <Link to="/signup" className="text-sm px-3 py-1 rounded bg-primary text-black font-medium">Sign up</Link>
+              <Link to="/signup" className="text-sm px-3 py-1 rounded bg-primary text-white font-medium">Sign up</Link>
             </>
           )}
           <button

@@ -1,6 +1,8 @@
 import React from 'react';
 import { CheckCircle } from 'lucide-react';
 import { motion } from 'framer-motion';
+// ensure motion isn't flagged as unused by eslint when used as JSX namespace
+void motion;
 
 const features = [
   { title: 'Local payments (eSewa/Khalti)', desc: 'Pay & receive easily in Nepal.' },

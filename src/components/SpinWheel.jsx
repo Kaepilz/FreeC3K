@@ -47,7 +47,7 @@ export default function SpinWheel() {
   };
 
   return (
-    <div className="flex flex-col md:flex-row gap-6 items-center">
+    <div className="flex flex-col md:flex-column gap-6 items-center">
       <div className="w-64 h-64 rounded-full relative flex items-center justify-center">
         <motion.div
           animate={spinning ? { rotate: 720 } : { rotate: 0 }}
@@ -72,7 +72,7 @@ export default function SpinWheel() {
 
       <div className="text-sm text-neutral-300 max-w-sm">
         <h4 className="text-lg font-semibold mb-2">Daily Spin</h4>
-        <p>If you win a big prize you may need to invite friends or complete a small task to claim it — this makes our platform go viral :)</p>
+        <p>If you win a big prize you may need to invite friends or complete a small task to claim it</p>
 
         <div className="mt-4">
           <div className="text-xs text-neutral-400">Recent wins</div>

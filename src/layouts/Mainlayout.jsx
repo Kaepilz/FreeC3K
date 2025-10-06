@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import DevDebug from '../components/DevDebug';
 
 export default function MainLayout({ children }) {
   return (

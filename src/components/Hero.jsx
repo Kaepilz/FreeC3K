@@ -6,12 +6,15 @@ import SpinWheel from './SpinWheel';
 
 export default function Hero() {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    <section className="display-flex flex-col  gap-8 items-center">
       <div>
-        <motion.h1 initial={{ y: -10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.6 }} className="text-4xl md:text-5xl font-extrabold leading-tight">
-          Find talented freelancers <span className="text-accent">fast</span>, hire local, pay local.
+        <motion.h1 initial={{ y: -10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.6 }} className="mb-60 text-4xl md:text-5xl font-extrabold items-center justify-center text-center">
+          Make Simpler Attract Bigger
         </motion.h1>
-        <motion.p initial={{ y: 8, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.8 }} className="mt-4 text-neutral-300 max-w-xl">
+        
+    <input>
+
+        <motion.p initial={{ y: 8, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.8 }} className="mb-20 items-center display-flex flex-col text-neutral-300 max-w-xl">
           FreelanceHub connects Nepali businesses & freelancers with trust-first tools — escrow, referrals, and viral offers to grow fast.
         </motion.p>
 

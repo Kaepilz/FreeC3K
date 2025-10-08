@@ -12,7 +12,7 @@ export default function Hero() {
           Make Simpler Attract Bigger
         </motion.h1>
         
-    <input>
+    
 
         <motion.p initial={{ y: 8, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.8 }} className="mb-20 items-center display-flex flex-col text-neutral-300 max-w-xl">
           FreelanceHub connects Nepali businesses & freelancers with trust-first tools — escrow, referrals, and viral offers to grow fast.
@@ -34,5 +34,6 @@ export default function Hero() {
         </div>
       </div>
     </section>
-  );
+  
+);
 }

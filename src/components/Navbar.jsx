@@ -32,7 +32,7 @@ export default function Navbar() {
           </div>
           
           <div className="hidden md:block">
-            <div className="text-xl font-bold">Freelance<span className="text-accent">Hub</span></div>
+            <div className="text-xl font-bold">Free<span className="text-accent">Sphere</span></div>
             <div className="text-xs text-neutral-400">Nepal-first • Made with ❤️</div>
           </div>
         </Link>

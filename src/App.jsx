@@ -8,15 +8,16 @@ import FreelancerDashboard from './pages/dashboard/FreelancerDashboard';
 import MainLayout from './layouts/Mainlayout';
 import ProtectedRoute from './components/ProtectedRoute';
 
+import './custom.css';
+
 export default function App() {
   return (
-    <MainLayout>
+    <MainLayout >
       {/* debug: test element to check Tailwind utilities */}
       <div className="p-4">
-      
-      </div>
+      </div >
       <Routes>
-        <Route index element={<Home />} />
+        <Route index element={<Home  />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/ClientDashboard" element={<ClientDashboard />} />
